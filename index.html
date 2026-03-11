@@ -3,49 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEP & BIM Coordination Services</title>
+    <title>Nextorbit Design Services | BIM & Automation</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">ENGINEERING CO.</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Nextorbit Logo" class="nav-logo">
+            <span class="brand-name">NEXT<span>ORBIT</span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#automation">Automation</a></li>
+            <li><a href="#contact" class="btn-primary">Get Started</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Next-Gen Engineering</span>
+            <h1>Digital Excellence <br>in BIM & Design</h1>
+            <p>Elevating MEP coordination and fabrication through advanced automation and precision modeling.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn-primary">Discuss Your Project</a>
+                <a href="#services" class="btn-secondary">Our Expertise</a>
+            </div>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <h1>Full-Scale MEP & BIM Solutions</h1>
-        <p>Expert coordination and engineering for complex building systems.</p>
-        <button onclick="scrollToContact()">Get a Quote</button>
-    </section>
-
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="card">
-                <h3>MEP Design</h3>
-                <p>Mechanical, Electrical, and Plumbing engineering tailored for efficiency.</p>
+    <section id="services" class="section">
+        <h2 class="section-title">Design Services</h2>
+        <div class="grid">
+            <div class="service-card">
+                <div class="icon">🏗️</div>
+                <h3>BIM Solutions</h3>
+                <p>Comprehensive 3D modeling and MEP coordination ensuring clash-free construction.</p>
             </div>
-            <div class="card">
-                <h3>BIM Coordination</h3>
-                <p>Advanced 3D modeling and clash detection to save time and costs.</p>
-            </div>
-            <div class="card">
+            <div class="service-card">
+                <div class="icon">🤖</div>
                 <h3>Automation</h3>
-                <p>Custom Revit tools to streamline your fabrication workflows.</p>
+                <p>Custom Revit add-ins and API solutions built to eliminate repetitive tasks.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon">🛰️</div>
+                <h3>Scan-to-BIM</h3>
+                <p>Accurate point cloud conversions into intelligent Revit models for as-built documentation.</p>
             </div>
         </div>
     </section>
 
-    <footer id="contact">
-        <p>Contact us at: info@yourdomain.com</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+    </body>
 </html>
