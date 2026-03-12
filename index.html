@@ -3,93 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nextorbit | Advanced BIM & Digital Twins</title>
+    <title>Central Mechanical LLC | Digital Twins & BIM Automation</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Lexend:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="glass-nav">
-        <div class="nav-container">
-            <div class="brand">NEXT<span>ORBIT</span></div>
-            <div class="nav-links">
-                <a href="#services">Expertise</a>
-                <a href="#workflow">Workflow</a>
-                <a href="#projects">Portfolio</a>
-                <a href="#contact" class="cta-outline">Enquire Now</a>
-            </div>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Beyond<span>BIM</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact" class="nav-btn">Contact Us</a></li>
+            </ul>
         </div>
     </nav>
 
-    <section class="hero-advanced">
-        <div class="hero-bg-overlay"></div>
-        <div class="hero-content">
-            <h1 class="reveal-text">NEXT-GEN <br>MEP COORDINATION</h1>
-            <p class="hero-sub">Specializing in Scan-to-BIM, MEP Fabrication, and Revit API Automation for the world's most complex projects.</p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn-solid">View Portfolio</a>
-                <a href="#services" class="btn-text">Explore Solutions →</a>
+    <header id="home" class="hero">
+        <div class="hero-bg-lines"></div>
+        <div class="container">
+            <h1 class="hero-title">Beyond <span>BIM</span></h1>
+            <p class="hero-subtitle">Driving Global Excellence in Mechanical Design & Automation since 2014.</p>
+        </div>
+    </header>
+
+    <section class="stats-section">
+        <div class="container grid-4">
+            <div class="stat-box"><h2>350M+</h2><p>Sq.ft. Modeled</p></div>
+            <div class="stat-box"><h2>1,000+</h2><p>Global Projects</p></div>
+            <div class="stat-box"><h2>7.2M+</h2><p>Digital Twin Sq.ft.</p></div>
+            <div class="stat-box"><h2>48+</h2><p>Enterprise Partners</p></div>
+        </div>
+    </section>
+
+    <section id="automation" class="automation-section">
+        <div class="container">
+            <div class="flex-row">
+                <div class="text-block">
+                    <span class="tag">PREFACE</span>
+                    <h2>BIM Automation & Digital Twins</h2>
+                    <p>We utilize the BIM framework to simulate multiple data points for design, construction, and asset operations. Our custom Revit API development extends this data into the "Real" world through Digital Twins.</p>
+                    <a href="#services" class="outline-btn">Read More</a>
+                </div>
+                <div class="image-block">
+                                    </div>
             </div>
         </div>
     </section>
 
-    <section id="workflow" class="workflow-section">
+    <section id="services" class="services-grid-section">
         <div class="container">
-            <span class="section-tag">THE PROCESS</span>
-            <h2>Our Digital Workflow</h2>
-            <div class="workflow-grid">
-                <div class="step">
-                    <span class="number">01</span>
-                    <h3>Data Capture</h3>
-                    <p>High-precision 3D Laser Scanning and Point Cloud acquisition for as-built accuracy.</p>
+            <h2 class="section-heading">BIM services we offer</h2>
+            <div class="grid-2">
+                <div class="service-tile">
+                    <div class="icon">⏱️</div>
+                    <h3>Faster Design Development</h3>
+                    <p>Automated routing and coordination workflows.</p>
                 </div>
-                <div class="step">
-                    <span class="number">02</span>
-                    <h3>BIM Modeling</h3>
-                    <p>LOD 400/500 parametric modeling across all MEP disciplines in Revit.</p>
+                <div class="service-tile">
+                    <div class="icon">📄</div>
+                    <h3>Co-generate Construction Docs</h3>
+                    <p>Automated spooling and shop drawing generation.</p>
                 </div>
-                <div class="step">
-                    <span class="number">03</span>
-                    <h3>Coordination</h3>
-                    <p>Automated clash detection and resolution using custom Revit API scripts.</p>
+                <div class="service-tile">
+                    <div class="icon">👥</div>
+                    <h3>Virtual Contractor / Asset Manager</h3>
+                    <p>LOD 500 models for lifecycle management.</p>
                 </div>
-                <div class="step">
-                    <span class="number">04</span>
-                    <h3>Fabrication</h3>
-                    <p>Generation of shop drawings, spool sheets, and CNC-ready data exports.</p>
+                <div class="service-tile">
+                    <div class="icon">📈</div>
+                    <h3>Further Use & Development</h3>
+                    <p>Scalable BIM data for future renovations.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="portfolio-section">
+    <section class="importance-section">
         <div class="container">
-            <h2>Scan-to-BIM Transformation</h2>
-            <p>Moving from raw data to intelligent models.</p>
-            <div class="comparison-slider">
-                <div class="panel">
-                    <img src="https://placehold.co/800x450/1a1a1a/444?text=RAW+POINT+CLOUD+SCAN" alt="Point Cloud">
-                    <div class="label">POINT CLOUD</div>
-                </div>
-                <div class="panel">
-                    <img src="https://placehold.co/800x450/004687/fff?text=INTELLIGENT+BIM+MODEL" alt="BIM Model">
-                    <div class="label">REVIT MODEL</div>
-                </div>
+            <h2 class="center-title">Importance of BIM in Global Construction</h2>
+            <div class="grid-3">
+                <div class="data-point"><h3>Only 31%</h3><p>Projects completed within budget without BIM.</p></div>
+                <div class="data-point"><h3>Only 25%</h3><p>Projects meet deadlines without advanced coordination.</p></div>
+                <div class="data-point"><h3>80%</h3><p>Value delivered via labor-centric subcontractors.</p></div>
             </div>
         </div>
     </section>
 
-    <footer class="advanced-footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <h3>NEXTORBIT</h3>
-                    <p>Leading the digital transformation of the AEC industry through automation and precision modeling.</p>
-                </div>
-                <div class="footer-contact">
-                    <p>📧 contact@nextorbit.com</p>
-                    <p>📍 Global BIM Delivery Center</p>
-                </div>
-            </div>
+    <footer>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Central Mechanical LLC. All Rights Reserved.</p>
+            <p>Crafted for Digital Engineering Excellence.</p>
         </div>
     </footer>
 </body>
