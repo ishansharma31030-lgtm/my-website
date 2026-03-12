@@ -3,50 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond BIM - Professional Services</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Beyond BIM - Professional BIM Services</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; }
+        
+        /* Navigation */
+        nav { background: #002b5c; padding: 1em 2em; position: sticky; top: 0; z-index: 1000; }
+        nav a { color: #fff; text-decoration: none; margin: 0 1.5em; font-weight: bold; }
+        nav a:hover { color: #00d285; }
+        
+        /* Header/Hero */
+        header { background: linear-gradient(135deg, #00d285 0%, #00a862 100%); color: #fff; padding: 5em 2em; text-align: center; }
+        header h1 { font-size: 4em; margin-bottom: 0.5em; }
+        header p { font-size: 1.5em; margin-bottom: 1em; }
+        header button { background: #fff; color: #00d285; padding: 1em 2em; font-size: 1em; border: none; cursor: pointer; border-radius: 50px; }
+        
+        /* Sections */
+        section { padding: 4em 2em; }
+        section h2 { font-size: 2.5em; margin-bottom: 1em; color: #002b5c; text-align: center; }
+        
+        /* Stats */
+        .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2em; }
+        .stat-box { background: #00d285; color: #fff; padding: 2em; border-radius: 10px; text-align: center; }
+        .stat-box h3 { font-size: 3em; margin-bottom: 0.5em; }
+        .stat-box p { font-size: 1.2em; }
+        
+        /* About */
+        .about { display: grid; grid-template-columns: 1fr 1fr; gap: 3em; align-items: center; }
+        .about img { width: 100%; border-radius: 10px; }
+        .about p { font-size: 1.1em; margin-bottom: 1em; }
+        .features-list { list-style: none; margin-top: 1em; }
+        .features-list li { padding: 0.5em 0; color: #00d285; font-weight: bold; }
+        
+        /* Services */
+        .services { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2em; }
+        .service-card { background: #f8fafc; padding: 2em; border-radius: 10px; border-left: 5px solid #00d285; }
+        .service-card h3 { color: #002b5c; margin-bottom: 1em; font-size: 1.5em; }
+        
+        /* Portfolio */
+        .portfolio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2em; }
+        .portfolio-item { background: #f8fafc; border-radius: 10px; overflow: hidden; }
+        .portfolio-item img { width: 100%; height: 200px; object-fit: cover; }
+        .portfolio-item h3 { padding: 1em; color: #002b5c; }
+        
+        /* Contact */
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3em; }
+        .contact-info p { margin: 1em 0; font-size: 1.1em; }
+        form { display: flex; flex-direction: column; gap: 1em; }
+        input, textarea { padding: 1em; border: 2px solid #ddd; border-radius: 5px; font-size: 1em; }
+        input:focus, textarea:focus { border-color: #00d285; outline: none; }
+        button { background: #00d285; color: #fff; padding: 1em 2em; border: none; border-radius: 5px; font-size: 1em; cursor: pointer; font-weight: bold; }
+        
+        /* Footer */
+        footer { background: #002b5c; color: #fff; text-align: center; padding: 2em; }
+        
+        @media (max-width: 768px) {
+            .stats, .services, .portfolio, .about, .contact-grid { grid-template-columns: 1fr; }
+            header h1 { font-size: 2em; }
+            section h2 { font-size: 2em; }
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="index.html" class="brand">Beyond<span>BIM</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li class="dropdown">
-                    <a href="#">Services ▾</a>
-                    <ul class="dropdown-content">
-                        <li><a href="services.html">All Services</a></li>
-                        <li><a href="mep-coordination.html">MEP Coordination</a></li>
-                        <li><a href="bim-automation.html">BIM Automation</a></li>
-                        <li><a href="scan-to-bim.html">Scan-to-BIM</a></li>
-                        <li><a href="digital-twins.html">Digital Twins</a></li>
-                    </ul>
-                </li>
-                <li><a href="projects.html">Portfolio</a></li>
-                <li><a href="contact.html" class="btn-cta">Contact Us</a></li>
-            </ul>
-        </div>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#stats">Stats</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
-
-    <header class="hero">
-        <div class="container">
-            <p style="color:var(--primary-green); font-weight:700; letter-spacing:2px;">SINCE 2014</p>
-            <h1>Beyond <span>BIM</span></h1>
-            <p>Driving Global Excellence in Mechanical Design and Digital Twins.</p>
+    
+    <!-- Hero Section -->
+    <header id="home">
+        <div>
+            <p>SINCE 2014 - GLOBAL LEADER</p>
+            <h1>Beyond BIM</h1>
+            <p>Driving Global Excellence in Mechanical Design and Digital Twins</p>
+            <button onclick="document.getElementById('contact').scrollIntoView()">Get Started</button>
         </div>
     </header>
-
-    <section class="container">
-        <div class="grid-4">
-            <div class="stat-box"><h3>350M+</h3><p>Sq. Ft. Modeled</p></div>
-            <div class="stat-box"><h3>1,000+</h3><p>Projects</p></div>
-            <div class="stat-box"><h3>200+</h3><p>Talented Staff</p></div>
-            <div class="stat-box"><h3>10+</h3><p>Years Experience</p></div>
+    
+    <!-- Statistics -->
+    <section id="stats">
+        <h2>Our Impact</h2>
+        <div class="stats">
+            <div class="stat-box">
+                <h3>350M+</h3>
+                <p>Sq. Ft. Modeled</p>
+            </div>
+            <div class="stat-box">
+                <h3>1,000+</h3>
+                <p>Projects</p>
+            </div>
+            <div class="stat-box">
+                <h3>200+</h3>
+                <p>Talented Staff</p>
+            </div>
+            <div class="stat-box">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+            </div>
         </div>
     </section>
-
-    <footer><p>&copy; 2026 Central Mechanical LLC</p></footer>
-    <script src="script.js"></script>
+    
+    <!-- About -->
+    <section id="about">
+        <h2>About Beyond BIM</h2>
+        <div class="about">
+            <div>
+                <p>Central Mechanical LLC has established itself as a powerhouse in BIM services, transforming how buildings are designed and managed globally.</p>
+                <p>With 200+ talented professionals and a portfolio of over 2,500 successful projects, we deliver world-class BIM solutions.</p>
+                <ul class="features-list">
+                    <li>✓ Industry-leading expertise</li>
+                    <li>✓ Cutting-edge technology</li>
+                    <li>✓ Global delivery capability</li>
+                    <li>✓ 24/7 dedicated support</li>
+                </ul>
+            </div>
+            <img src="https://placehold.co/500x400/00d285/fff?text=Our+Team" alt="Team">
+        </div>
+    </section>
+    
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Core Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>🏗️ MEP Coordination</h3>
+                <p>Expert coordination of mechanical, electrical, and plumbing systems for conflict-free designs.</p>
+            </div>
+            <div class="service-card">
+                <h3>⚙️ BIM Automation</h3>
+                <p>Streamline workflows with intelligent automation and parametric design solutions.</p>
+            </div>
+            <div class="service-card">
+                <h3>🔄 Scan-to-BIM</h3>
+                <p>Transform point clouds into comprehensive 3D BIM models.</p>
+            </div>
+            <div class="service-card">
+                <h3>🌐 Digital Twins</h3>
+                <p>Create virtual representations for real-time monitoring and optimization.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features -->
+    <section>
+        <h2>Why Choose Beyond BIM?</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>💼 Professional Team</h3>
+                <p>200+ highly trained BIM professionals with extensive experience</p>
+            </div>
+            <div class="service-card">
+                <h3>🚀 Advanced Technology</h3>
+                <p>Cutting-edge tools and software for superior deliverables</p>
+            </div>
+            <div class="service-card">
+                <h3>🌍 Global Reach</h3>
+                <p>Operating across continents with 24/7 support</p>
+            </div>
+            <div class="service-card">
+                <h3>✅ Quality Assurance</h3>
+                <p>Rigorous testing and validation for every project</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <img src="https://placehold.co/400x300/00d285/fff?text=Healthcare" alt="Healthcare">
+                <h3>Healthcare Facilities</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://placehold.co/400x300/00d285/fff?text=Industrial" alt="Industrial">
+                <h3>Industrial Plants</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="https://placehold.co/400x300/00d285/fff?text=DataCenter" alt="Data Center">
+                <h3>Data Centers</h3>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>📧 Email:</strong> contact@beyondbim.com</p>
+                <p><strong>📍 Headquarters:</strong> New Delhi, India</p>
+                <p><strong>🌐 Website:</strong> www.beyondbim.com</p>
+                <p><strong>⏰ Support:</strong> 24/7 Available</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Tell us about your project" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Beyond BIM. All rights reserved.</p>
+    </footer>
 </body>
 </html>
