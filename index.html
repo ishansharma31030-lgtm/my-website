@@ -3,72 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nextorbit Design Services | Global BIM Excellence</title>
+    <title>Nextorbit Design Services | Global BIM & MEP Excellence</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="header">
-        <div class="container">
+        <div class="container-full">
             <div class="logo">
-                <img src="logo.png" alt="Nextorbit">
+                <img src="https://placehold.co/200x80/004687/FFF?text=Nextorbit" alt="Nextorbit Logo">
             </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact" class="nav-btn">Get a Quote</a></li>
+                <li><a href="#mep">MEP</a></li>
+                <li><a href="#scan">Scan-to-BIM</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-btn">Request a Proposal</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <header id="home" class="hero">
+        <div class="hero-image">
+            <img src="https://placehold.co/1920x1080/1a1a1a/FFF?text=Coordinated+BIM+Model" alt="Complex coordinated BIM model">
+        </div>
         <div class="hero-overlay"></div>
         <div class="container hero-text">
-            <h1>Expert BIM & <br><span>MEP Coordination</span></h1>
-            <p>Delivering precision-driven engineering solutions for global construction projects.</p>
-            <a href="#services" class="btn-main">Our Services</a>
+            <h1>Digital Engineering <br>Solutions <br><span>For AEC Partners</span></h1>
+            <p>Clash-free, fabrication-ready MEP coordination with advanced Revit API automation.</p>
+            <a href="#contact" class="btn-main">Partner With Us</a>
         </div>
-    </section>
+    </header>
 
-    <section id="about" class="about">
-        <div class="container grid-2">
-            <div>
-                <span class="sub-title">Who We Are</span>
-                <h2>Your Partners in Digital Construction</h2>
-                <p>Nextorbit Design Services specializes in end-to-end BIM workflows. From initial MEP design to complex fabrication spooling, we ensure your projects are clash-free and ready for the field.</p>
-            </div>
-            <div class="about-stats">
-                <div class="stat-box"><h3>99%</h3><p>Accuracy</p></div>
-                <div class="stat-box"><h3>24/7</h3><p>Support</p></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="services">
+    <section id="scan" class="scan-section">
         <div class="container">
             <div class="text-center">
-                <h2>Our Expertise</h2>
-                <div class="line"></div>
+                <h2>Scan to BIM</h2>
+                <div class="line-center"></div>
             </div>
-            <div class="service-grid">
-                <div class="s-card">
-                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="BIM">
-                    <h3>BIM Coordination</h3>
-                    <p>Clash detection and resolution using Navisworks and Revit.</p>
+            <div class="before-after-container">
+                <div class="comparison-panel">
+                    <h3>Before (Point Cloud)</h3>
+                    <img src="https://placehold.co/600x400/CCCCCC/333333?text=Point+Cloud+Scan" alt="Scan before: raw point cloud">
                 </div>
-                <div class="s-card">
-                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80" alt="MEP">
-                    <h3>MEP Fabrication</h3>
-                    <p>Detailed spool drawings and fabrication-ready models.</p>
-                </div>
-                <div class="s-card">
-                    <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80" alt="Automation">
-                    <h3>Revit Automation</h3>
-                    <p>Custom C# plugins and Dynamo scripts for faster workflows.</p>
+                <div class="comparison-panel">
+                    <h3>After (Revit Model)</h3>
+                    <img src="https://placehold.co/600x400/004687/FFFFFF?text=Intelligent+Revit+Model" alt="Scan after: clean Revit model">
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="text-center">
+                <h2>Project Excellence</h2>
+                <div class="line-center"></div>
+            </div>
+            <div class="project-gallery">
+                <div class="proj-img"><img src="https://placehold.co/400x300/e0e0e0/333333?text=MEP+Coordinaton+Sample" alt="MEP Coordination"></div>
+                <div class="proj-img"><img src="https://placehold.co/400x300/e0e0e0/333333?text=Clash+Detection+Example" alt="Clash Detection"></div>
+                <div class="proj-img"><img src="https://placehold.co/400x300/e0e0e0/333333?text=Fabrication+Spool+Drawing" alt="Spool Drawing"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Nextorbit Design Services. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
