@@ -3,56 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Homepage</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Beyond BIM - Professional Services</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#stats">Stats</a></li>
-            <li><a href="#footer">Contact</a></li>
-        </ul>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand">Beyond<span>BIM</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="services.html">All Services</a></li>
+                        <li><a href="mep-coordination.html">MEP Coordination</a></li>
+                        <li><a href="bim-automation.html">BIM Automation</a></li>
+                        <li><a href="scan-to-bim.html">Scan-to-BIM</a></li>
+                        <li><a href="digital-twins.html">Digital Twins</a></li>
+                    </ul>
+                </li>
+                <li><a href="projects.html">Portfolio</a></li>
+                <li><a href="contact.html" class="btn-cta">Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <!-- Hero Section -->
-    <header id="home">
-        <h1>Welcome to Our Professional Services</h1>
-        <p>Your satisfaction, our commitment.</p>
-        <a href="#services" class="cta">Discover More</a>
+
+    <header class="hero">
+        <div class="container">
+            <p style="color:var(--primary-green); font-weight:700; letter-spacing:2px;">SINCE 2014</p>
+            <h1>Beyond <span>BIM</span></h1>
+            <p>Driving Global Excellence in Mechanical Design and Digital Twins.</p>
+        </div>
     </header>
-    
-    <!-- Services Overview -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="service">
-            <h3>Consulting</h3>
-            <p>Expert guidance to achieve your goals.</p>
-        </div>
-        <div class="service">
-            <h3>Development</h3>
-            <p>Top-notch software solutions tailored for you.</p>
-        </div>
-        <div class="service">
-            <h3>Support</h3>
-            <p>24/7 support to ensure your success.</p>
+
+    <section class="container">
+        <div class="grid-4">
+            <div class="stat-box"><h3>350M+</h3><p>Sq. Ft. Modeled</p></div>
+            <div class="stat-box"><h3>1,000+</h3><p>Projects</p></div>
+            <div class="stat-box"><h3>200+</h3><p>Talented Staff</p></div>
+            <div class="stat-box"><h3>10+</h3><p>Years Experience</p></div>
         </div>
     </section>
-    
-    <!-- Stats -->
-    <section id="stats">
-        <h2>Our Impact</h2>
-        <p>Over 500 satisfied clients.</p>
-        <p>98% customer satisfaction rate.</p>
-        <p>10 years of experience in the industry.</p>
-    </section>
-    
-    <!-- Footer -->
-    <footer id="footer">
-        <p>&copy; 2026 Professional Services. All rights reserved.</p>
-        <p>Contact us: <a href="mailto:info@professionalservices.com">info@professionalservices.com</a></p>
-    </footer>
+
+    <footer><p>&copy; 2026 Central Mechanical LLC</p></footer>
+    <script src="script.js"></script>
 </body>
 </html>
